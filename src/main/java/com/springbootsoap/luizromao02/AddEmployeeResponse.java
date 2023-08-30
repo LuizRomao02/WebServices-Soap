@@ -1,0 +1,99 @@
+//
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.7 
+// Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2023.08.29 às 10:06:02 PM BRT 
+//
+
+
+package com.springbootsoap.luizromao02;
+
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlType;
+
+
+/**
+ * <p>Classe Java de anonymous complex type.
+ * 
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * 
+ * <pre>
+ * &lt;complexType>
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="serviceStatus" type="{http://luizromao02.springbootsoap.com}serviceStatus"/>
+ *         &lt;element name="employeeInfo" type="{http://luizromao02.springbootsoap.com}employeeInfo"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "", propOrder = {
+    "serviceStatus",
+    "employeeInfo"
+})
+@XmlRootElement(name = "addEmployeeResponse")
+public class AddEmployeeResponse {
+
+    @XmlElement(required = true)
+    protected ServiceStatus serviceStatus;
+    @XmlElement(required = true)
+    protected EmployeeInfo employeeInfo;
+
+    /**
+     * Obtém o valor da propriedade serviceStatus.
+     * 
+     * @return
+     *     possible object is
+     *     {@link ServiceStatus }
+     *     
+     */
+    public ServiceStatus getServiceStatus() {
+        return serviceStatus;
+    }
+
+    /**
+     * Define o valor da propriedade serviceStatus.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link ServiceStatus }
+     *     
+     */
+    public void setServiceStatus(ServiceStatus value) {
+        this.serviceStatus = value;
+    }
+
+    /**
+     * Obtém o valor da propriedade employeeInfo.
+     * 
+     * @return
+     *     possible object is
+     *     {@link EmployeeInfo }
+     *     
+     */
+    public EmployeeInfo getEmployeeInfo() {
+        return employeeInfo;
+    }
+
+    /**
+     * Define o valor da propriedade employeeInfo.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link EmployeeInfo }
+     *     
+     */
+    public void setEmployeeInfo(EmployeeInfo value) {
+        this.employeeInfo = value;
+    }
+
+}
